@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 120px;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.genre{
+    display: flex;
+
+}
+span{
+    position: relative;
+    top: -10px;
+}

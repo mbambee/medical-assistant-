@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultation Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Consultation Search</h2>
+        <form action="diagno.php" method="POST" id="consultationForm">
+            <div class="element">
+                <label class="entete" for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="errName"></span>
+            </div>
+            <div class="element">
+                <label class="entete" for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+                <span class="errSurname"></span>
+            </div>
+            <div class="element">
+                <label class="entete" for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="errEmail"></span>
+            </div>
+            <div class="element">
+                <label class="entete" for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="errPassword"></span>
+            </div>
+            <button type="submit" id="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

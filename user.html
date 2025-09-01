@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulaire d'inscription</h2>
+        <form id="inscriptionForm">
+                <div class="element">
+                    <label class="entete">Nom :</label>
+                    <input type="text" id="nom" name="nom">
+                    <span class="errNom"></span>
+                </div>
+                <div class="element">
+                    <label  class="entete" for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <span class="errPrenom"></span>
+                </div>
+                <div class="element">
+                    <label  class="entete" for="age">age :</label>
+                    <input type="number" id="age" name="age">
+                    <span class="errAge"></span>
+
+                </div>
+                <div class="element">
+                    <label  class="entete"for="email">Email :</label>
+                    <input type="email" id="email" name="email">
+                    <span class="errEmail"></span>
+                </div>
+                <div class="element">
+                    <label  class="entete" for="password">Mot de passe :</label>
+                    <input type="text" id="password" name="password">
+                    <span class="errPassword"></span>
+                    <button type="button" id="btn2">Générer</button>
+                </div>
+        <div>
+            <label for="">sexe:</label>
+            <input type="radio" name="sexe" value="homme" id="genreM">
+            <label for="">homme</label>
+            <input type="radio" name="sexe" value="femme" id="genreF">
+            <label for="">femme</label>
+            <span class="errGenre"></span>
+        </div>
+
+           
+            <hr>
+            <div>
+                <input type="checkbox" id="notifications" name="notifications">
+                <label for="notifications">Je souhaite recevoir des notifications</label>
+                <span class="errNotifications"></span>
+            </div>
+            <button type="submit" id="submit">Valider</button>
+        </form>
+    </div>
+</body>
+</html>

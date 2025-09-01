@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="container">
+        <form action="statistique.php" method="post" onsubmit="return verif2()">
+            <div>
+                <h1>statistique par tranche d'age</h1>
+            </div>
+            <div>
+                <label for="">Tranche d'age:</label>
+                <div>
+                    <label for="">tranche d'age</label>
+                    <select name="liste" id="liste">
+                        <option value="0" disabled selected>--choisir une tranche--</option>
+                        <option value="0_12">Enfant(0,12)</option>
+                        <option value="13_17">adolescent(13,17)</option>
+                        <option value="18_35">jeune adulte(18,35)</option>
+                        <option value="35_50">adulte(36-50)</option>
+                        <option value="51_65">senior(51-65)</option>
+                        <option value="66">agé(66+)</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Afficher les statistique</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

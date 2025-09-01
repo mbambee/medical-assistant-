@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="container">
+        <form action="taritement.php" method="post" onsubmit="return verif1()">
+            <div>
+            <div>
+                <label for="">nom:</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div>
+                <label for="">prenom:</label>
+                <input type="text" id="pre" name="pre">
+            </div>
+        </div>
+        <div>
+            <label for="">sexe:</label>
+            <input type="radio" name="sexe" value="homme">
+            <label for="">homme</label>
+            <input type="radio" name="sexe" value="femme">
+            <label for="">femme</label>
+        </div>
+        <div>
+            <label for="">tranche d'age</label>
+            <select name="liste" id="lsite">
+                <option value="0" disabled selected>--choisir une tranche--</option>
+                <option value="enfant">Enfant(0,12)</option>
+                <option value="ado">adolescent(13,17)</option>
+                <option value="jado">jeune adulte(18,35)</option>
+                <option value="adulte">adulte(36-50)</option>
+                <option value="senior">senior(51-65)</option>
+                <option value="agé">agé(66+)</option>
+            </select>
+        </div>
+        <div>
+            <label for="">symptomes ressentis:</label><br>
+            <textarea name="syp" id="syp"></textarea>
+        </div>
+        <button type="submit">Diagnostiquer</button>
+        </form>
+    </fieldset>
+</body>
+</html>
